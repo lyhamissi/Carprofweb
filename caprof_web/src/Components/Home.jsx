@@ -3,7 +3,6 @@ import '../Styles/home.css'
 import background from '../assets/10006.webp';
 import car1 from '../assets/car.jpeg';
 import car2 from '../assets/car1.jpeg';
-import car3 from '../assets/car2.jpeg';
 import car4 from '../assets/car3.jpeg';
 import car5 from '../assets/car4.jpeg';
 import car6 from '../assets/10030.webp';

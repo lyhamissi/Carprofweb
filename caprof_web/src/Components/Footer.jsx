@@ -1,8 +1,5 @@
 import React from 'react'
-import phone from '../assets/phone.png';
 import { FaInstagramSquare, FaWhatsapp, FaFacebook, FaPhoneSquareAlt } from "react-icons/fa";
-import wha from '../assets/wha.png';
-import fb from '../assets/fbb.png';
 import logo from '../assets/logo.png';
 import logocopy from '../assets/logo - Copy.png';
 import '../Styles/footer.css';
