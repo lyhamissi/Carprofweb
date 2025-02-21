@@ -1,0 +1,232 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #222;
+  color: white;
+  padding: 7rem 7rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 55rem;
+  margin-top: 3rem;
+}
+
+.sidefooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  margin-left: 3rem;
+}
+
+#lol {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 3.5rem;
+  margin-top: -2.3rem;
+  margin-bottom: 4rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.9;
+  margin-bottom: 4rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icons svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+ul {
+  display: grid;
+  list-style: none;
+  margin-top: 8rem;
+  padding: 0;
+  margin-left: -12rem;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+ul li a:hover {
+  color: #999;
+}
+
+.middlepart {
+  text-align: left;
+  width: 35%;
+  margin-left: 3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+  color: #eee;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.rightpart {
+  width: 35%;
+  position: relative;
+  text-align: right;
+}
+
+#time {
+  background: transparent;
+  color: white;
+  border: 0.15rem solid white;
+  padding: 0.8rem 3rem;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rightpart img {
+  width: 90%;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 1rem;
+  left: 9.5rem;
+  filter: brightness(0) invert(1);
+}
+
+.logo1 {
+  background-color: white;
+}
+
+.rightpart p {
+  margin-top: 10rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.copyright {
+  margin-top: 43rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 5rem 4rem;
+    height: auto;
+  }
+
+  .sidefooter,
+  .middlepart,
+  .rightpart {
+    width: 45%;
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  .rightpart img {
+    left: 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+
+  .sidefooter,
+  .middlepart,
+  .rightpart {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  ul {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .rightpart img {
+    display: none;
+  }
+
+  #time {
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  h6,
+  h5,
+  h3,
+  h2 {
+    font-size: smaller;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+  }
+
+  .social {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+
+  #time {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+  }
+}

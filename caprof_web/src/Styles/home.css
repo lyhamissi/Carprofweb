@@ -1,0 +1,684 @@
+.img {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+h1 {
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 10rem;
+    letter-spacing: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.sele {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+#sele,
+#seli,
+.custom-button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.35rem;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2rem;
+}
+
+
+.custom-button {
+    background-color: #fb8236;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.custom-button .arrow {
+    margin-left: 1rem;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.custom-button:hover .arrow {
+    transform: translateX(0.5rem);
+}
+
+.custom-button:hover {
+    background-color: #fb8136d2;
+}
+
+.lined-text {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.lined-text::before,
+.lined-text::after {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #000;
+    margin: 0 1rem;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 0.01rem solid #e0e0e0;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.01rem solid #e0e0e0;
+}
+
+.card-content {
+    padding: 0.5rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0.5rem;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-mileage {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-left: -2rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 0.1rem solid #e0e0e0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.certified-icon img {
+    color: #00796b;
+    border-radius: 1rem;
+    padding: 0.4rem 0.5rem 0;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    width: 2rem;
+}
+
+.features {
+    display: grid;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #444;
+    margin: 1.5rem 0.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-footer {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-right: 4.5rem;
+    width: 6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #d1cfcf76;
+}
+
+.custom-buttons {
+    background-color: #f45e00;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem 8rem;
+    width: 9.6875rem;
+    height: 3.125rem;
+    justify-content: center;
+}
+
+.custom-buttons .arrows {
+    margin-left: 0.5rem;
+    font-size: 1.875rem;
+}
+
+.custom-buttons:hover {
+    background-color: #fd6506;
+}
+
+.buttons {
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    color: rgb(33, 33, 255);
+    padding: 1rem 0.6rem 0;
+    text-align: center
+}
+
+.buttons span {
+    padding: 1rem 1rem;
+}
+
+.google {
+    font-size: 2rem;
+    padding: 0.3rem 0 0.1rem;
+    margin-top: 0.3rem;
+    margin-right: 2rem;
+}
+
+.facebook {
+    font-size: 2rem;
+    padding: 0.3rem 0 0.1rem;
+    margin-left: 10rem;
+    margin-right: 2rem;
+    color: blue;
+}
+
+.cards-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.cards {
+    width: 12.5rem;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.15);
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.people {
+    background-color: #fff;
+    border: 3px solid #bfbebe;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 68rem;
+    margin: 6rem auto;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.people h2 {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.circles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 2rem;
+}
+
+.circles {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-left: -3rem;
+}
+
+.circles img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h4 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+input,
+.sub {
+    width: 80%;
+    height: 3rem;
+    max-width: 15rem;
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    padding-left: 0.8rem;
+}
+
+.sub {
+    background-color: #fd6506;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.sub:hover {
+    background-color: #eb5c03;
+}
+
+.heading h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.cardss {
+    background-color: #fff;
+    border: 0.0625rem solid #e0e0e0;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 21.875rem;
+    display: flex;
+    height: 37.5rem;
+    flex-direction: column;
+    margin-left: 0.9375rem;
+}
+
+.cards-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cards-image img {
+    width: 17.5rem;
+    height: 17.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.3125rem solid white;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.cardss-title {
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.cardss-mileage {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    margin-top: -2rem;
+    padding: 0.5rem 1rem;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    margin-top: 6.25rem;
+    margin-left: 3.125rem;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 23.125rem;
+    height: 23.125rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    margin-left: -4.375rem;
+    border: 0.125rem solid white;
+}
+
+.circle:first-child {
+    margin-left: 0;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+        margin-top: 5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .lined-text {
+        font-size: 2.5rem;
+    }
+
+    .lined-text::before,
+    .lined-text::after {
+        width: 8rem;
+    }
+
+    #sele,
+    #seli,
+    .custom-button {
+        width: 12rem;
+        font-size: 1rem;
+    }
+
+    .people h2 {
+        font-size: 2rem;
+    }
+
+    .circles {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    input,
+    .sub {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    .heading h4 {
+        font-size: 1.75rem;
+    }
+
+    .cardss {
+        width: 18rem;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .cards-image img {
+        width: 15rem;
+        height: 15rem;
+        margin: 0;
+    }
+
+    .cardss-title {
+        font-size: 1.375rem;
+    }
+
+    .cardss-mileage {
+        font-size: 0.875rem;
+        margin-top: 0;
+    }
+
+    .circle-container {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .circle {
+        width: 18rem;
+        height: 18rem;
+        margin-left: -2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .lined-text {
+        font-size: 2rem;
+        flex-direction: column;
+    }
+
+    .lined-text::before,
+    .lined-text::after {
+        width: 6rem;
+    }
+
+    .sele {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sele,
+    #seli,
+    .custom-button {
+        width: 100%;
+        max-width: 10rem;
+        margin: 1rem auto;
+    }
+
+    .custom-button {
+        font-size: 1rem;
+    }
+
+    .cards {
+        width: 10rem;
+    }
+
+    .people {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .people h2 {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+    }
+
+    .circles {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    input,
+    .sub {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .heading h4 {
+        font-size: 1.5rem;
+    }
+
+    .cards2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardss {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .cards-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-image img {
+        width: 12rem;
+        height: 12rem;
+        margin: 0 auto;
+    }
+
+    .cardss-title {
+        font-size: 1.25rem;
+    }
+
+    .cardss-mileage {
+        font-size: 0.875rem;
+
+    }
+
+    .circle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circle {
+        width: 15rem;
+        height: 15rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .lined-text {
+        font-size: 1.8rem;
+    }
+
+    .lined-text::before,
+    .lined-text::after {
+        width: 5rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .custom-button {
+        font-size: 0.9rem;
+    }
+
+    .cards {
+        width: 8rem;
+    }
+
+    .cards-image img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .circle {
+        width: 12rem;
+        height: 12rem;
+    }
+}
